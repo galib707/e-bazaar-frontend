@@ -1,0 +1,49 @@
+.task-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-inner-container {
+  width: 97%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+  gap: 2em;
+}
+
+.backlog,
+.in-progress,
+.completed,
+.add-another {
+  width: 25%;
+  height: 100%;
+  border: 2px solid gray;
+  padding: 1em;
+}
+
+.backlog-title,
+.in-porgress-title,
+.completed-title,
+.add-another-title {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* justify-content: center; */
+  align-items: center;
+  margin-block-start: 1em;
+}
