@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 function Navbar() {
+  const goTo = useNavigate();
   return (
     <div className="navbar">
       <div className="left">
@@ -12,7 +14,9 @@ function Navbar() {
       </div>
 
       <div className="mid">
-        <div className="filter">Buy/Sell</div>
+        <div className="filter" onClick={() => goTo("/upload")}>
+          Sell
+        </div>
       </div>
 
       <div className="right">
